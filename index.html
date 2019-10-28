@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wep Devolp</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<img id = "joker">
+	<button id = "go">Click Me</button>
+	<button id= "beeperOne">Beeper</button>
+	<button class = "beeperTwo">Beeper 2</button>
+	<button class = "beeperThree">Beerper 3</button>
+	<div></div>
+	<p id = "output">HEY</p>
+	<input id = "color"></input>
+
+	<p>
+		Q4 : the answer is append adds what ever inside it to the end of the tag which is number A
+	</p>
+	<p>
+		Q5 is A & C
+	</p>
+	<p>
+		2 practice 1 Q = F
+	</p>
+	<p>2 practice 4 Q = C </p>
+	<p>2 practice 5 Q = B </p>
+	<ol>
+	<li>Here is thing one.</li>
+	<li>Here is thing two.</li>
+	<li>Here is thing three.</li>
+	</ol>
+	<div id="secret">We should hide this!</div>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.js"
+  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		$('ol').append('<li>this is a test</li>')
+		$("body").css('background-color', 'red')
+		$('#secret').hide()
+		$('button').on('click',function(){alert ("booom")})
+		$('button#go').on('click', function(){ $('p#output').text( $('input#color').val() ).css('color', 'red'); });
+		$('#joker').attr("src","https://mothership.sg/wp-content/uploads/2019/10/joker1.jpg")</script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
